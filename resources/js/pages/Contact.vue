@@ -9,13 +9,10 @@
     let message = ref('');
     let success = ref(false);
 
-/*
+
     function submitform(e) {
     
     e.preventDefault();
-
-   
-    
 
     const params = JSON.stringify(
         {
@@ -38,19 +35,10 @@
                 console.log(error);})
         .then(function () 
             {
-                alert('somehow here');
+               
             });
-        }*/
+        }
 
-    const submitform = () => {
-      axios
-        .get("api/contact")
-        .then((response) => {
-          state.pokemons = response.data.results; // 👈 get just results
-        }).catch((error) =>{
-         
-            });
-    };
 
 </script>
 
